@@ -1,16 +1,34 @@
-# React + Vite
+# e-plantShopping
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+e-plantShopping is a simple React-based web application for browsing and purchasing indoor and outdoor plants. The project showcases a clean UI, plant listings with images, and basic navigation pages such as Home, About Us, and Contact.
 
-Currently, two official plugins are available:
+## Features
+- Display of plant items with images, names, prices, and categories
+- About Us page describing the company
+- Styled landing page with background image
+- Built using React and Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React
+- Vite
+- JavaScript
+- CSS
 
-## React Compiler
+## How to Run the Project
+1. Clone the repository:
+git clone https://github.com/Mohamedbdi/plant-shop.git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Code
+2. Install dependencies:
+npm install
 
-## Expanding the ESLint configuration
+Code
+3. Start the development server:
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Code
+
+## Project Structure
+- `src/components/AboutUs.jsx` — Company details
+- `src/App.css` — Styling including landing page background image
+- `README.md` — Project documentation
