@@ -1,3 +1,4 @@
+/* Root styling */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,19 +6,23 @@
   text-align: center;
 }
 
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +38,32 @@
   }
 }
 
+/* Card */
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* ================================
+   REQUIRED FOR ASSIGNMENT
+   Background image for landing page
+   ================================ */
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('./src/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
 }
