@@ -9,7 +9,7 @@ const LandingPage = () => {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundImage: 'url("/assets/background.jpg")',
+      backgroundImage: 'url("/src/assets/background.jpg")',
       backgroundSize: 'cover',
       color: 'white',
       textAlign: 'center'

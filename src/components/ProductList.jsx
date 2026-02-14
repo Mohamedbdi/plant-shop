@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/cartSlice';
+import './ProductCart.css'; // import shared CSS
 
 const products = [
   { id: 1, name: 'Snake Plant', price: 10, category: 'Indoor', image: '/src/assets/snake.jpg' },
@@ -18,12 +19,12 @@ const ProductList = () => {
   const isInCart = (id) => cartItems.find(item => item.id === id);
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div className="container">
       <h1>Products</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+      <div className="product-grid">
         {products.map(product => (
-          <div key={product.id} style={{ border: '1px solid #ccc', padding: '10px', width: '200px' }}>
-            <img src={product.image} alt={product.name} style={{ width: '100%' }} />
+          <div key={product.id} className="product-card">
+            <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>${product.price}</p>
             <button

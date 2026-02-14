@@ -1,0 +1,20 @@
+.about-us-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f7f9f4; /* light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333; /* make sure text is dark */
+ }
+
+.about-us-container h1,
+.about-us-container h2 {
+  color: #2c6e49;
+}
+
+.about-us-container p {
+  color: #4a4a4a;
+  line-height: 1.6;
+} 

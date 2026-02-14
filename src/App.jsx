@@ -85,13 +85,14 @@
 //     </>
 //   )
 // }export default App;
-
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import Header from './components/Header';
+import AboutUs from './components/AboutUs'; // <-- import AboutUs
 
 function App() {
   return (
@@ -101,10 +102,11 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductList />} />
         <Route path="/cart" element={<Cart />} />
+       <Route path="/about" element={<AboutUs />} />
+
       </Routes>
     </Router>
   );
 }
 
-export default App;
-
+export default App
